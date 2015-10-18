@@ -45,6 +45,12 @@ $(document).ready(function() {
 	});
 
 
+
+	if ($(window).height() <= 400 ) {
+		$('#logo').css({'padding-top' : '0'});
+		$('#panel1, ::after').css({'height' : '400px'})
+	}
+
 	
 
 });

@@ -286,8 +286,61 @@ button {
 }
 
 
+@media (max-width: 850px) {
+
+	nav ul li {
+		font-size: 1.25em;
+		float: none;
+		padding-bottom: 10px;
+	}
+
+	#panel1 #logo{
+		width: 80%;
+	}
+
+	#panel1 p {
+		width: 90%;
+		font-size: 1.25em;
+	}
+
+	#panel2 p {
+		width: 90%;
+		font-size: 1.125em;
+	}
+
+	form {
+		width: 80%;
+	}
+
+}
+
+@media (max-width: 600px) {
+	#panel2 h2 {
+		font-size: 2em;
+	}
+
+	#phone-wrapper {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.phone {
+		width: 245px;
+		margin: 0 auto;
+	}
+}
 
 
+
+@media (max-height: 400px) {
+	nav {
+		margin-top: 20px;
+	}
+
+	.container:after {
+		height: 400px;
+	}
+}
 
 
 
