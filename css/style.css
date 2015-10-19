@@ -426,6 +426,10 @@ button {
 		width: 245px;
 		margin: 0 auto;
 	}
+
+	#panel3 h2 {
+		font-size: 2em;
+	}
 }
 
 
