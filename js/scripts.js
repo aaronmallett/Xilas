@@ -3,6 +3,7 @@ $(document).ready(function() {
 	/*paddingOne();*/
 	paddingTwo();
 	navScroll();
+	navMenu();
 
 	/*animatePhone();*/
 
@@ -62,7 +63,7 @@ $(document).ready(function() {
 			var containerHeight = $('.panel1-height').outerHeight(true);
 			var emptySpace = $(window).height() - containerHeight;
 
-			if( y_scroll_pos > 80 ) {
+			if( y_scroll_pos > 50 ) {
 				$('nav').css({
 					'position' : 'fixed',
 					'top' : '0',
@@ -87,6 +88,16 @@ $(document).ready(function() {
 			}
 
 		});
+	};
+
+	function navMenu() {
+
+		$('#nav-button').click(function() {
+
+			$('#mobile-nav').slideToggle('slow');
+
+		});
+
 	};
 
 	

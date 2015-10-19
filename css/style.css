@@ -31,6 +31,7 @@ PANEL 1
 	width: 100%;
 	margin: 0;
 	padding: 0;
+	margin-top: -16px;
 }
 
 .container:after {
@@ -46,14 +47,24 @@ PANEL 1
 }
 
 #panel1 {
-	width: 73%;
+	/*width: 73%;
 	margin: 0 auto;
 	padding: 0;
 	background: #262626;
 	position: relative;
 	z-index: 20;
 	top: 0;
-	left: 0;
+	left: 0;*/
+
+	width: 73%;
+    margin: 0 auto;
+    padding: 0;
+    background: #262626;
+    position: relative;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    margin-top: -34px;
 }
 
 #panel1 img {
@@ -303,6 +314,64 @@ button {
     z-index: 10;
 }
 
+#mobile-nav {
+	display: none;
+    overflow: auto;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    /* position: absolute; */
+    position: relative;
+    top: 16px;
+    /* top: 70px; */
+    z-index: 100;
+}
+
+#mobile-nav ul {
+	background: #108ab5;
+	width: 73%;
+	text-align: center;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#mobile-nav li {
+	color: white;
+	list-style: none;
+	padding: 10px 0;
+}
+
+#mobile-nav a{
+	text-decoration: none;
+	color: white;
+	font-family:'gothamBook', helvetica, sans-serif;
+}
+
+#mobile-nav:hover {
+	text-decoration: none;
+	color: white;
+}
+
+#nav-button {
+	display: none;
+    height: 38px;
+    z-index: 100;
+    position: relative;
+    width: 60px;
+    margin: 0 auto;
+    top: 14px;
+    left: 50%;
+    margin-left: -30px;
+    padding-top: 0px;
+}
+
+
+
+
+
+
+
+
 
 @media (max-width: 850px) {
 
@@ -330,6 +399,17 @@ button {
 		width: 80%;
 	}
 
+	#nav {
+		display: none;
+	}
+
+	/*#mobile-nav {
+		display: block;
+	}*/
+
+	#nav-button{
+		display: inline;
+	}
 }
 
 @media (max-width: 600px) {
