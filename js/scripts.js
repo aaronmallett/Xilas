@@ -1,7 +1,8 @@
 $(document).ready(function() {
 
-	paddingOne();
+	/*paddingOne();*/
 	paddingTwo();
+	navScroll();
 
 	/*animatePhone();*/
 
@@ -10,13 +11,13 @@ $(document).ready(function() {
 	$("#panel1, #panel2").height($(window).height());
 
 
-	function paddingOne() {
+	/*function paddingOne() {
 
 	var containerHeight = $('.panel1-height').outerHeight(true);
 	var emptySpace = $(window).height() - containerHeight;
 	$('#logo').css({'padding-top' : emptySpace/2 })
 
-	};
+	};*/
 
 	function paddingTwo() {
 
@@ -50,6 +51,43 @@ $(document).ready(function() {
 		$('#logo').css({'padding-top' : '0'});
 		$('#panel1, ::after').css({'height' : '400px'})
 	}
+
+	function navScroll() {
+		var nav = $('nav');
+		var ns = $('.nav-on-scroll');
+
+		$(window).scroll(function() {
+
+			var y_scroll_pos = window.pageYOffset;
+			var containerHeight = $('.panel1-height').outerHeight(true);
+			var emptySpace = $(window).height() - containerHeight;
+
+			if( y_scroll_pos > 80 ) {
+				$('nav').css({
+					'position' : 'fixed',
+					'top' : '0',
+					'background' : '#108ab5',
+					'margin' : '0',
+					'margin-bottom' : '-80px'
+				})
+
+
+			}
+
+			else {
+				$('nav').css({
+					'position' : 'relative',
+					'top' : '0',
+					'background' : 'transparent',
+					'margin' : '80px auto',
+					'margin-bottom' : '0'
+				})
+
+
+			}
+
+		});
+	};
 
 	
 
