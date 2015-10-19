@@ -64,7 +64,7 @@ PANEL 1
     z-index: 20;
     top: 0;
     left: 0;
-    margin-top: -34px;
+    margin-top: 16px;
 }
 
 #panel1 img {
@@ -409,6 +409,10 @@ button {
 
 	#nav-button{
 		display: inline;
+	}
+
+	#panel1 {
+		    margin-top: -34px;
 	}
 }
 

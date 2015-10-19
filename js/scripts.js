@@ -63,7 +63,7 @@ $(document).ready(function() {
 			var containerHeight = $('.panel1-height').outerHeight(true);
 			var emptySpace = $(window).height() - containerHeight;
 
-			if( y_scroll_pos > 50 ) {
+			if( y_scroll_pos > 78 ) {
 				$('nav').css({
 					'position' : 'fixed',
 					'top' : '0',
